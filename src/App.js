@@ -82,7 +82,7 @@ function App() {
     <>
       <FadeInSection>
         <div className="body">
-          <h1>welcome to "why emilio"</h1>
+          <h1>welcome to "whyemil.io"</h1>
         </div>
       </FadeInSection>
 
@@ -92,11 +92,11 @@ function App() {
         </div>
       </FadeInSection>
 
-      <FadeInSection>
+      {/* <FadeInSection>
         <div className="body">
           <MenuWithContent></MenuWithContent>
         </div>
-      </FadeInSection>
+      </FadeInSection> */}
 
       <FadeInSection>
         <div className="body">
