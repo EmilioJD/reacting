@@ -1,5 +1,9 @@
 import "./App.css";
 import React from "react";
+import HTMLFlipBook from "react-pageflip";
+import pic1 from "./images/indigo-genesis-final.png";
+import pic2 from "./images/indigo-genesis-final2.png";
+import pic3 from "./images/indigo-genesis-final3.png";
 
 const beige = "#f2e9e4";
 const darkbeige = "#c9ada7";
@@ -31,8 +35,22 @@ const SquareBox = ({ color, height = "40%", width = "60%", content }) => (
   </div>
 );
 
-function App() {
+// this component implements a menu with a content display area
+const MenuWithContent = ({ nothing }) => (
+  <div className="menu-with-content">
+    <div className="menu">
+      <p>Thing</p>
+      <p>Thing</p>
+      <p>Thing</p>
+      <p>Thing</p>
+    </div>
+    <div className="content">
+      <h1>Thing</h1>
+    </div>
+  </div>
+);
 
+function App() {
   //FadeInSection from selbekk.io
   function FadeInSection(props) {
     const [isVisible, setVisible] = React.useState(true);
@@ -70,21 +88,42 @@ function App() {
 
       <FadeInSection>
         <div className="body">
-          <h1>this is my website</h1>
+          <h1>this is my portfolio</h1>
         </div>
       </FadeInSection>
+
+      <FadeInSection>
+        <div className="body">
+          <MenuWithContent></MenuWithContent>
+        </div>
+      </FadeInSection>
+
       <FadeInSection>
         <div className="body">
           <h1>nothing is here yet i guess..</h1>
         </div>
       </FadeInSection>
 
-      {/* <div className="body">
-        <h1>this is emil.io</h1>
-      </div>
-      <div className="body">
-        <h1>welcome to my website</h1>
-      </div> */}
+      {/* <FadeInSection> */}
+        {/* <HTMLFlipBook width={900} height={1200}>
+          <img src={pic1}/>
+          <img src={pic2}/>
+          <img src={pic3}/>
+          <img src={pic1}/>
+          <img src={pic1}/>
+          <img src={pic2}/>
+          <img src={pic3}/>
+          <img src={pic1}/>
+          <img src={pic1}/>
+          <img src={pic2}/>
+          <img src={pic3}/>
+          <img src={pic1}/>
+          <img src={pic1}/>
+          <img src={pic2}/>
+          <img src={pic3}/>
+          <img src={pic1}/>
+        </HTMLFlipBook> */}
+      {/* </FadeInSection> */}
     </>
   );
 }
