@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/reacting/static/css/main.ff0732a5.css",
-    "main.js": "/reacting/static/js/main.21e595d9.js",
+    "main.css": "/reacting/static/css/main.028c2118.css",
+    "main.js": "/reacting/static/js/main.6c27ecaf.js",
     "static/js/787.e6dfd02e.chunk.js": "/reacting/static/js/787.e6dfd02e.chunk.js",
+    "static/media/indigo-genesis-final2.png": "/reacting/static/media/indigo-genesis-final2.c32b55cc42b8ddd52431.png",
+    "static/media/indigo-genesis-final3.png": "/reacting/static/media/indigo-genesis-final3.9457e71dc37372cd8fbc.png",
+    "static/media/indigo-genesis-final.png": "/reacting/static/media/indigo-genesis-final.d158333616bb3e195e35.png",
     "index.html": "/reacting/index.html",
-    "main.ff0732a5.css.map": "/reacting/static/css/main.ff0732a5.css.map",
-    "main.21e595d9.js.map": "/reacting/static/js/main.21e595d9.js.map",
+    "main.028c2118.css.map": "/reacting/static/css/main.028c2118.css.map",
+    "main.6c27ecaf.js.map": "/reacting/static/js/main.6c27ecaf.js.map",
     "787.e6dfd02e.chunk.js.map": "/reacting/static/js/787.e6dfd02e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff0732a5.css",
-    "static/js/main.21e595d9.js"
+    "static/css/main.028c2118.css",
+    "static/js/main.6c27ecaf.js"
   ]
 }
