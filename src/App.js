@@ -64,18 +64,13 @@ function App() {
     <>
       <FadeInSection>
         <div className="body">
-          <h1>this is emil.io</h1>
-        </div>
-      </FadeInSection>
-      <FadeInSection>
-        <div className="body">
-          <h1>welcome to my website</h1>
+          <h1>welcome to "why emilio"</h1>
         </div>
       </FadeInSection>
 
       <FadeInSection>
         <div className="body">
-          <h1>i'm going to use this as my portfolio</h1>
+          <h1>this is my website</h1>
         </div>
       </FadeInSection>
       <FadeInSection>
