@@ -9,8 +9,15 @@
 
 html {
   /* background-color: var(--darkbeige); */
-  background-color: #ED8C8C;
+  /* background-color: #ED8C8C; */
+  background-color: white;
+  /* font-family: 'Courier New', Courier, monospace; */
 
+}
+
+* {
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: optima, monospace;
 }
 
 .fade-in-section {
@@ -66,61 +73,104 @@ h1 {
   font-size: calc((10vh+10vw) / 2);
   font-size: 5vw;
   text-align: center;
-  /* font-size:60px; */
-  /* font-size: 5vw; */
-  /* margin-top: 300px; */
-}
-
-h2 {
-  margin: 0px;
-  font-size: 40px;
-}
-
-h3 {
-  display: flex;
-  margin: 30px;
-  align-self: center;
-  justify-self: center;
-}
-
-.textbox {
-  display: flex;
-  flex-direction: column;
-  background-color: #4a4e69;
-  width: 60%;
-  margin: 30px;
 }
 
 p {
-  margin: 10px;
-  color: white;
-}
-
-.menu-with-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100vw;
-  height: 100vh;
-}
-
-.menu {
-  display: flex;
-  background-color: grey;
-  flex-direction: column;
+  margin: 20px;
   color: black;
-  opacity: 70%;
-  height:100vh;
-  width: 20%;
-  font-size: 60px;
+}
+
+.outer-box {
+  display: flex;
+
+}
+
+.inner-box {
+  flex: 2;
+  border: solid 2px black;
+  padding: 5px; 
+}
+
+/* .inner-box:first-child{
+  margin-left: 20px;
+} */
+
+section {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.nav {
+  display: flex;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -5px;
+  z-index: 2;
+  height: 70px;
+  min-height: 70px;
+  width: calc(100% - 1.5rem);
+  background-color: #fff;
+  padding: 0 1rem;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
 }
 
-.content {
+.nav__container {
   display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  background-color: #22223b;
-  color: black;
-  opacity: 70%;
-  height:100vh;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav__container__actions {
+  display: inline-flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  flex: 1;
+}
+
+#about {
+  margin-top: -80px;
+}
+
+#projects,
+#contact {
+  color: #3b3b3c;
+  background: #eaf2fa;
+}
+
+.active {
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  gap: 4rem;
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  align-self: center;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+
+.title{
+  font-size: 40px;
+}
+.title:hover{
+  text-decoration: none;
 }
