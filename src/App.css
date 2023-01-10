@@ -1,4 +1,4 @@
-/* blue = f2e9e4; */
+
 :root {
   --beige: #f2e9e4;
   --darkbeige: #c9ada7;
@@ -8,71 +8,25 @@
 }
 
 html {
-  /* background-color: var(--darkbeige); */
-  /* background-color: #ED8C8C; */
-  background-color: white;
-  /* font-family: 'Courier New', Courier, monospace; */
+  /* -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black; */
+  background: rgb(66, 163, 255);
+  background: linear-gradient(165deg, rgb(66, 163, 255) 0%, rgba(168,213,255,1) 32%, rgba(255,255,255,1) 100%);
 
 }
 
 * {
-  /* font-family: 'Courier New', Courier, monospace; */
-  font-family: optima, monospace;
+  font-family: 'Raleway', regular;
 }
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(60vh);
-  visibility: hidden;
-  transition: opacity 1600ms ease-out, transform 600ms ease-out,
-    visibility 1600ms ease-out;
-  will-change: opacity, transform, visibility;
-}
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-}
-
-.body {
+body{
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Courier New", monospace;
-  /* color: rgb(18, 183, 18); */
-  color: var(--navy);
   justify-content: center;
-
-  background-image: linear-gradient(
-  0deg,
-  hsl(0deg 73% 74%) 0%,
-  hsl(5deg 75% 75%) 8%,
-  hsl(10deg 76% 76%) 14%,
-  hsl(15deg 77% 78%) 18%,
-  hsl(21deg 78% 79%) 21%,
-  hsl(27deg 79% 80%) 23%,
-  hsl(34deg 79% 81%) 26%,
-  hsl(41deg 78% 82%) 28%,
-  hsl(50deg 77% 83%) 32%,
-  hsl(50deg 77% 83%) 36%,
-  hsl(41deg 78% 82%) 40%,
-  hsl(34deg 79% 81%) 46%,
-  hsl(27deg 79% 80%) 53%,
-  hsl(21deg 78% 79%) 60%,
-  hsl(15deg 77% 78%) 69%,
-  hsl(10deg 76% 76%) 78%,
-  hsl(5deg 75% 75%) 89%,
-  hsl(0deg 73% 74%) 100%
-);
-
 }
-
-h1 {
-  font-size: calc((10vh+10vw) / 2);
-  font-size: 5vw;
-  text-align: center;
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 97vw; 
 }
 
 p {
@@ -91,16 +45,16 @@ p {
   padding: 5px; 
 }
 
-/* .inner-box:first-child{
-  margin-left: 20px;
-} */
-
 section {
 	display: grid;
-	place-items: center;
-	height: 100vh;
+  border-radius: 10px;
+  place-items: center;
+  justify-self: center;
+  background: rgb(255, 245, 234);
 	font-size: 32px;
 	font-weight: bold;
+  height: 100vh;
+  width: 100%
 }
 
 .nav {
@@ -110,12 +64,17 @@ section {
   position: sticky;
   top: -5px;
   z-index: 2;
-  height: 70px;
+  height: 100px;
   min-height: 70px;
-  width: calc(100% - 1.5rem);
-  background-color: #fff;
+  /* width: calc(100% - 1.5rem); */
+  background-color: transparent;
   padding: 0 1rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  /* box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%); */
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: rgb(255, 245, 234);;
+  margin-top: 15px;
 }
 
 .nav__container {
@@ -136,14 +95,18 @@ section {
   flex: 1;
 }
 
-#about {
+#welcome {
   margin-top: -80px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.welcomeContent {
+  margin-top: 200px;
+  margin-left: 400px;
 }
 
-#projects,
-#contact {
-  color: #3b3b3c;
-  background: #eaf2fa;
+#projects {
+  color: black;
 }
 
 .active {
@@ -155,22 +118,42 @@ ul {
   gap: 4rem;
   font-size: 0.9rem;
   list-style: none;
-  padding: 0;
+  padding-top: 100px;
+  padding-left:100px;
+  width: 100%;
 }
 
 li {
   cursor: pointer;
   align-self: center;
+  color: black;
+  font-size: 30px;
 }
 
 li:hover {
   text-decoration: underline;
 }
 
-
-.title{
-  font-size: 40px;
-}
+/* .title{
+  font-size: 60px;
+  font-weight: bold;
+} */
 .title:hover{
   text-decoration: none;
+}
+.titleText{
+  font-size: 60px;
+  font-weight: bold;
+  background-color: rgba(0,131,255,1);
+  background-image: linear-gradient(165deg, rgba(0,131,255,1) 17%, rgba(168,213,255,1) 81%, rgba(255,255,255,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  background-color: rgba(0,131,255,1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
